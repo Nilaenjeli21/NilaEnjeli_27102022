@@ -1,0 +1,38 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package NilaEnjeli_27102022;
+
+/**
+ *
+ * @author Nila Enjeli
+ * 
+ */
+import java.io.*;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
+public class LatihanBacaBilangan {
+    public static void main(String[] args){
+        BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
+        int bil;
+
+
+        try {
+            System.out.print("Masukkan Angka : ");
+            bil = Integer.parseInt(input.readLine());
+            if(bil>=1 && bil<=10){
+            System.out.println("Valid Number");
+        }
+        else{
+            System.out.println("Invalid Number");
+        }
+        } catch (IOException ex) {
+            Logger.getLogger(LatihanBacaBilangan.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+
+    }
+
+}
